@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <defs>
+    <radialGradient id="pRight" cx="55%" cy="30%" r="70%"><stop offset="0%" stop-color="#FFC8D2"/><stop offset="55%" stop-color="#E87090"/><stop offset="100%" stop-color="#A0283C"/></radialGradient>
+    <radialGradient id="pLeft" cx="45%" cy="30%" r="70%"><stop offset="0%" stop-color="#FFC8D2"/><stop offset="55%" stop-color="#E87090"/><stop offset="100%" stop-color="#A0283C"/></radialGradient>
+    <radialGradient id="pTr" cx="50%" cy="20%" r="80%"><stop offset="0%" stop-color="#F8E8E0"/><stop offset="100%" stop-color="#D8B8B0"/></radialGradient>
+    <filter id="pShadow"><feDropShadow dx="2" dy="4" stdDeviation="5" flood-color="#500018" flood-opacity="0.45"/></filter>
+  </defs>
+
+  <!-- trakea -->
+  <rect x="108" y="10" width="24" height="48" rx="11" fill="url(#pTr)" filter="url(#pShadow)"/>
+  <path d="M110 20 h20 M110 30 h20 M110 40 h20 M110 50 h20" stroke="#C4A0A0" stroke-width="2" stroke-linecap="round"/>
+  <rect x="114" y="10" width="8" height="48" rx="4" fill="white" opacity="0.3"/>
+
+  <!-- bronkus utama kiri & kanan -->
+  <path d="M120 58 C112 62 96 66 80 72" fill="none" stroke="url(#pTr)" stroke-width="14" stroke-linecap="round"/>
+  <path d="M120 58 C128 62 144 66 160 72" fill="none" stroke="url(#pTr)" stroke-width="14" stroke-linecap="round"/>
+
+  <!-- bronkus sekunder kiri -->
+  <path d="M80 72 C72 80 66 90 62 102" fill="none" stroke="#E8CCCC" stroke-width="9" stroke-linecap="round" opacity="0.7"/>
+  <path d="M80 72 C74 82 72 96 74 108" fill="none" stroke="#E8CCCC" stroke-width="7" stroke-linecap="round" opacity="0.6"/>
+  <path d="M80 72 C78 86 82 100 86 114" fill="none" stroke="#E8CCCC" stroke-width="6" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- bronkus sekunder kanan -->
+  <path d="M160 72 C168 80 174 90 178 102" fill="none" stroke="#E8CCCC" stroke-width="9" stroke-linecap="round" opacity="0.7"/>
+  <path d="M160 72 C166 82 168 96 166 108" fill="none" stroke="#E8CCCC" stroke-width="7" stroke-linecap="round" opacity="0.6"/>
+  <path d="M160 72 C162 86 158 100 154 114" fill="none" stroke="#E8CCCC" stroke-width="6" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- paru kiri -->
+  <path d="M120 64 C100 64 70 72 52 92 C34 114 34 148 42 168 C52 190 72 202 90 204 C108 206 118 196 120 190 Z" fill="url(#pLeft)" filter="url(#pShadow)"/>
+
+  <!-- paru kanan -->
+  <path d="M120 64 C140 64 170 72 188 92 C206 114 206 148 198 168 C188 190 168 202 150 204 C132 206 122 196 120 190 Z" fill="url(#pRight)" filter="url(#pShadow)"/>
+
+  <!-- fissure (celah lobus) kiri -->
+  <path d="M60 108 C74 116 90 122 108 126" fill="none" stroke="#B06070" stroke-width="2" stroke-dasharray="4 3" opacity="0.55"/>
+
+  <!-- fissure (celah lobus) kanan -->
+  <path d="M180 108 C166 116 150 122 132 126" fill="none" stroke="#B06070" stroke-width="2" stroke-dasharray="4 3" opacity="0.55"/>
+  <path d="M186 140 C172 146 158 150 140 152" fill="none" stroke="#B06070" stroke-width="1.5" stroke-dasharray="3 3" opacity="0.4"/>
+
+  <!-- sorot cahaya permukaan paru -->
+  <ellipse cx="74" cy="100" rx="22" ry="30" fill="#FFE0E8" opacity="0.28" transform="rotate(-18 74 100)"/>
+  <ellipse cx="166" cy="100" rx="22" ry="30" fill="#FFE0E8" opacity="0.28" transform="rotate(18 166 100)"/>
+
+  <!-- pola alveolus (titik-titik kecil) -->
+  <g opacity="0.22" fill="#7A2030">
+    <circle cx="58" cy="130" r="4.5"/><circle cx="70" cy="148" r="4.5"/><circle cx="58" cy="166" r="4.5"/>
+    <circle cx="72" cy="178" r="4"/><circle cx="90" cy="188" r="3.5"/><circle cx="76" cy="124" r="3.5"/>
+    <circle cx="182" cy="130" r="4.5"/><circle cx="170" cy="148" r="4.5"/><circle cx="182" cy="166" r="4.5"/>
+    <circle cx="168" cy="178" r="4"/><circle cx="150" cy="188" r="3.5"/><circle cx="164" cy="124" r="3.5"/>
+  </g>
+
+  <!-- label -->
+  <text x="120" y="224" text-anchor="middle" font-family="'Plus Jakarta Sans',sans-serif" font-size="15" font-weight="700" fill="#A0283C">Paru-paru</text>
+  <text x="70" y="162" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#FFF0F0" opacity="0.85">Lobus Kiri</text>
+  <text x="170" y="162" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#FFF0F0" opacity="0.85">Lobus Kanan</text>
+</svg>

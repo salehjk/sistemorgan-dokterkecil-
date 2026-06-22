@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <defs>
+    <radialGradient id="hOuter" cx="38%" cy="28%" r="72%"><stop offset="0%" stop-color="#FF9CA0"/><stop offset="50%" stop-color="#CC1E32"/><stop offset="100%" stop-color="#7A0012"/></radialGradient>
+    <radialGradient id="hLeft" cx="40%" cy="35%" r="70%"><stop offset="0%" stop-color="#EF6673"/><stop offset="100%" stop-color="#A01428"/></radialGradient>
+    <radialGradient id="hRight" cx="40%" cy="35%" r="70%"><stop offset="0%" stop-color="#7C9EC8"/><stop offset="100%" stop-color="#2A4A80"/></radialGradient>
+    <radialGradient id="hAo" cx="30%" cy="20%" r="80%"><stop offset="0%" stop-color="#F08080"/><stop offset="100%" stop-color="#9A1020"/></radialGradient>
+    <radialGradient id="hPa" cx="30%" cy="20%" r="80%"><stop offset="0%" stop-color="#7090C0"/><stop offset="100%" stop-color="#1E3878"/></radialGradient>
+    <filter id="hShadow"><feDropShadow dx="3" dy="5" stdDeviation="6" flood-color="#3A000A" flood-opacity="0.55"/></filter>
+    <filter id="hGlow"><feGaussianBlur stdDeviation="2.5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <!-- latar transparan -->
+
+  <!-- aorta -->
+  <path d="M118 62 C118 38 128 22 140 18 C155 13 166 22 162 40 C160 52 150 58 148 68" fill="none" stroke="url(#hAo)" stroke-width="16" stroke-linecap="round"/>
+  <path d="M118 62 C118 38 128 22 140 18 C155 13 166 22 162 40 C160 52 150 58 148 68" fill="none" stroke="#FFAAAA" stroke-width="6" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- arteri pulmonalis -->
+  <path d="M108 58 C108 40 96 28 84 26 C72 24 64 34 68 46 C71 55 82 60 84 68" fill="none" stroke="url(#hPa)" stroke-width="13" stroke-linecap="round"/>
+  <path d="M108 58 C108 40 96 28 84 26 C72 24 64 34 68 46 C71 55 82 60 84 68" fill="none" stroke="#B0C8F0" stroke-width="5" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- vena cava superior -->
+  <rect x="98" y="26" width="14" height="36" rx="7" fill="url(#hPa)" opacity="0.85"/>
+
+  <!-- badan jantung utama -->
+  <path d="M120 210 C80 185 30 155 25 115 C18 70 46 44 76 46 C92 46 104 56 120 72 C136 56 148 46 164 46 C194 44 222 70 215 115 C210 155 160 185 120 210Z" fill="url(#hOuter)" filter="url(#hShadow)"/>
+
+  <!-- sekat antar ruang (septum) -->
+  <line x1="120" y1="74" x2="120" y2="185" stroke="#7A0012" stroke-width="3" opacity="0.55"/>
+
+  <!-- bilik kanan (warna biru — darah tak beroksigen) -->
+  <path d="M120 85 C100 85 72 95 62 115 C52 138 60 165 80 178 C95 188 110 192 120 193 Z" fill="url(#hRight)" opacity="0.82"/>
+
+  <!-- bilik kiri (warna merah — darah beroksigen) -->
+  <path d="M120 85 C140 85 168 95 178 115 C188 138 180 165 160 178 C145 188 130 192 120 193 Z" fill="url(#hLeft)" opacity="0.72"/>
+
+  <!-- sorot cahaya di permukaan -->
+  <ellipse cx="95" cy="88" rx="22" ry="16" fill="#FFE0E3" opacity="0.3" transform="rotate(-20 95 88)"/>
+  <ellipse cx="150" cy="84" rx="18" ry="13" fill="#FFE0E3" opacity="0.18" transform="rotate(15 150 84)"/>
+
+  <!-- pembuluh kecil (vena pulmonalis) -->
+  <path d="M75 78 C82 82 90 86 98 88" fill="none" stroke="#6080B8" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+  <path d="M165 78 C158 82 150 86 142 88" fill="none" stroke="#6080B8" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- garis otot (myocardium texture) -->
+  <path d="M68 120 C78 112 88 118 98 112 C108 106 118 112 120 118" fill="none" stroke="#9A1428" stroke-width="1.8" opacity="0.4"/>
+  <path d="M172 120 C162 112 152 118 142 112 C132 106 122 112 120 118" fill="none" stroke="#9A1428" stroke-width="1.8" opacity="0.4"/>
+  <path d="M60 140 C75 130 90 136 105 130 C112 127 118 132 120 138" fill="none" stroke="#9A1428" stroke-width="1.5" opacity="0.35"/>
+  <path d="M180 140 C165 130 150 136 135 130 C128 127 122 132 120 138" fill="none" stroke="#9A1428" stroke-width="1.5" opacity="0.35"/>
+
+  <!-- label -->
+  <text x="120" y="226" text-anchor="middle" font-family="'Plus Jakarta Sans',sans-serif" font-size="15" font-weight="700" fill="#CC1E32">Jantung</text>
+  <text x="78" y="148" text-anchor="middle" font-family="sans-serif" font-size="9.5" fill="#DDEEFF" opacity="0.9">Bilik Kanan</text>
+  <text x="162" y="148" text-anchor="middle" font-family="sans-serif" font-size="9.5" fill="#FFE0E0" opacity="0.9">Bilik Kiri</text>
+</svg>

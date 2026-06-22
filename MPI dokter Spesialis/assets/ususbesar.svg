@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <defs>
+    <linearGradient id="cbGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#E8C090"/><stop offset="50%" stop-color="#C4905C"/><stop offset="100%" stop-color="#8C5830"/></linearGradient>
+    <linearGradient id="cbInner" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#F8E4CC"/><stop offset="100%" stop-color="#DDB888"/></linearGradient>
+    <filter id="cbShadow"><feDropShadow dx="2" dy="3" stdDeviation="4.5" flood-color="#3C1800" flood-opacity="0.42"/></filter>
+  </defs>
+
+  <!-- caecum / apendiks di kanan bawah -->
+  <ellipse cx="196" cy="190" rx="18" ry="22" fill="url(#cbGrad)" filter="url(#cbShadow)"/>
+  <path d="M196 210 C200 218 200 226 196 232" fill="none" stroke="url(#cbGrad)" stroke-width="10" stroke-linecap="round"/>
+  <text x="202" y="230" font-family="sans-serif" font-size="7.5" fill="#5C2800" opacity="0.8">Apendiks</text>
+
+  <!-- kolon ascending (kanan, naik) -->
+  <path d="M196 172 C200 142 202 108 198 80" fill="none" stroke="url(#cbGrad)" stroke-width="26" stroke-linecap="round" filter="url(#cbShadow)"/>
+  <path d="M196 172 C200 142 202 108 198 80" fill="none" stroke="url(#cbInner)" stroke-width="12" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- kolon transversal (melintang, kanan ke kiri) -->
+  <path d="M198 60 C158 40 118 32 68 48 C52 54 42 64 40 74" fill="none" stroke="url(#cbGrad)" stroke-width="26" stroke-linecap="round" filter="url(#cbShadow)"/>
+  <path d="M198 60 C158 40 118 32 68 48 C52 54 42 64 40 74" fill="none" stroke="url(#cbInner)" stroke-width="12" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- kolon descending (kiri, turun) -->
+  <path d="M40 74 C36 108 34 142 36 172" fill="none" stroke="url(#cbGrad)" stroke-width="26" stroke-linecap="round" filter="url(#cbShadow)"/>
+  <path d="M40 74 C36 108 34 142 36 172" fill="none" stroke="url(#cbInner)" stroke-width="12" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- kolon sigmoid (S-shape kiri bawah) -->
+  <path d="M36 172 C38 190 52 200 68 200 C84 200 96 192 106 192 C118 192 128 200 130 212" fill="none" stroke="url(#cbGrad)" stroke-width="24" stroke-linecap="round" filter="url(#cbShadow)"/>
+  <path d="M36 172 C38 190 52 200 68 200 C84 200 96 192 106 192 C118 192 128 200 130 212" fill="none" stroke="url(#cbInner)" stroke-width="10" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- haustra (tonjolan-tonjolan di dinding usus besar) -->
+  <g fill="none" stroke="#9C6030" stroke-width="1.8" opacity="0.45">
+    <!-- kanan naik -->
+    <path d="M190 168 C200 162 206 156 200 150"/><path d="M192 142 C204 136 208 128 202 122"/>
+    <path d="M192 114 C204 108 208 100 202 94"/>
+    <!-- atas (transversal) -->
+    <path d="M170 52 C164 42 152 38 148 46"/><path d="M140 38 C134 28 122 26 118 34"/>
+    <path d="M106 36 C100 26 88 26 84 34"/><path d="M76 40 C70 32 58 32 56 42"/>
+    <!-- kiri turun -->
+    <path d="M48 84 C38 90 34 98 40 104"/><path d="M44 118 C34 124 30 132 36 138"/>
+    <path d="M44 152 C34 158 32 166 38 172"/>
+  </g>
+
+  <!-- sorot cahaya -->
+  <g opacity="0.22" fill="white">
+    <ellipse cx="200" cy="112" rx="5" ry="20" transform="rotate(6 200 112)"/>
+    <ellipse cx="120" cy="36" rx="18" ry="6" transform="rotate(-5 120 36)"/>
+    <ellipse cx="38" cy="122" rx="5" ry="22" transform="rotate(-4 38 122)"/>
+  </g>
+
+  <!-- label -->
+  <text x="120" y="236" text-anchor="middle" font-family="'Plus Jakarta Sans',sans-serif" font-size="13.5" font-weight="700" fill="#6A3010">Usus Besar</text>
+  <text x="118" y="28" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#5C2800" opacity="0.8">Kolon Transversal</text>
+  <text x="210" y="126" font-family="sans-serif" font-size="7.5" fill="#5C2800" opacity="0.75" transform="rotate(90 210 126)">Asc.</text>
+  <text x="22" y="122" font-family="sans-serif" font-size="7.5" fill="#5C2800" opacity="0.75" transform="rotate(-90 22 122)">Desc.</text>
+</svg>

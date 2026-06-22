@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <defs>
+    <linearGradient id="uGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#F5D090"/><stop offset="50%" stop-color="#D89040"/><stop offset="100%" stop-color="#A05818"/></linearGradient>
+    <linearGradient id="uInner" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#FBECC8"/><stop offset="100%" stop-color="#E8B870"/></linearGradient>
+    <filter id="uShadow"><feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#5A2800" flood-opacity="0.4"/></filter>
+  </defs>
+
+  <!-- usus halus berkelok -->
+  <!-- baris 1 kiri ke kanan -->
+  <path d="M30 50 Q75 28 120 50" fill="none" stroke="url(#uGrad)" stroke-width="22" stroke-linecap="round" filter="url(#uShadow)"/>
+  <path d="M30 50 Q75 28 120 50" fill="none" stroke="url(#uInner)" stroke-width="10" stroke-linecap="round" opacity="0.55"/>
+
+  <!-- lengkung kanan atas ke bawah -->
+  <path d="M120 50 Q148 68 120 90" fill="none" stroke="url(#uGrad)" stroke-width="22" stroke-linecap="round" filter="url(#uShadow)"/>
+  <path d="M120 50 Q148 68 120 90" fill="none" stroke="url(#uInner)" stroke-width="10" stroke-linecap="round" opacity="0.55"/>
+
+  <!-- baris 2 kanan ke kiri -->
+  <path d="M120 90 Q75 112 30 90" fill="none" stroke="url(#uGrad)" stroke-width="22" stroke-linecap="round" filter="url(#uShadow)"/>
+  <path d="M120 90 Q75 112 30 90" fill="none" stroke="url(#uInner)" stroke-width="10" stroke-linecap="round" opacity="0.55"/>
+
+  <!-- lengkung kiri bawah -->
+  <path d="M30 90 Q8 108 30 130" fill="none" stroke="url(#uGrad)" stroke-width="22" stroke-linecap="round" filter="url(#uShadow)"/>
+  <path d="M30 90 Q8 108 30 130" fill="none" stroke="url(#uInner)" stroke-width="10" stroke-linecap="round" opacity="0.55"/>
+
+  <!-- baris 3 kiri ke kanan -->
+  <path d="M30 130 Q85 152 140 130" fill="none" stroke="url(#uGrad)" stroke-width="22" stroke-linecap="round" filter="url(#uShadow)"/>
+  <path d="M30 130 Q85 152 140 130" fill="none" stroke="url(#uInner)" stroke-width="10" stroke-linecap="round" opacity="0.55"/>
+
+  <!-- lengkung kanan tengah -->
+  <path d="M140 130 Q165 150 140 170" fill="none" stroke="url(#uGrad)" stroke-width="22" stroke-linecap="round" filter="url(#uShadow)"/>
+  <path d="M140 130 Q165 150 140 170" fill="none" stroke="url(#uInner)" stroke-width="10" stroke-linecap="round" opacity="0.55"/>
+
+  <!-- baris 4 kanan ke kiri -->
+  <path d="M140 170 Q90 192 42 172" fill="none" stroke="url(#uGrad)" stroke-width="22" stroke-linecap="round" filter="url(#uShadow)"/>
+  <path d="M140 170 Q90 192 42 172" fill="none" stroke="url(#uInner)" stroke-width="10" stroke-linecap="round" opacity="0.55"/>
+
+  <!-- villi (tonjolan mukosa) — titik2 kecil di sepanjang jalur -->
+  <g fill="#C07830" opacity="0.35">
+    <circle cx="45" cy="44" r="3.5"/><circle cx="60" cy="38" r="3.5"/><circle cx="78" cy="36" r="3.5"/>
+    <circle cx="96" cy="38" r="3.5"/><circle cx="112" cy="44" r="3.5"/>
+    <circle cx="40" cy="96" r="3.5"/><circle cx="56" cy="102" r="3.5"/>
+    <circle cx="74" cy="104" r="3.5"/><circle cx="92" cy="102" r="3.5"/>
+    <circle cx="110" cy="96" r="3.5"/>
+    <circle cx="46" cy="134" r="3.5"/><circle cx="64" cy="140" r="3.5"/>
+    <circle cx="82" cy="144" r="3.5"/><circle cx="100" cy="140" r="3.5"/>
+    <circle cx="118" cy="134" r="3.5"/>
+    <circle cx="58" cy="176" r="3.5"/><circle cx="78" cy="182" r="3.5"/>
+    <circle cx="98" cy="182" r="3.5"/><circle cx="118" cy="176" r="3.5"/>
+  </g>
+
+  <!-- label -->
+  <text x="120" y="222" text-anchor="middle" font-family="'Plus Jakarta Sans',sans-serif" font-size="14" font-weight="700" fill="#8A4010">Usus Halus</text>
+  <text x="175" y="152" text-anchor="middle" font-family="sans-serif" font-size="8.5" fill="#8A4010" opacity="0.8">± 6 meter</text>
+</svg>

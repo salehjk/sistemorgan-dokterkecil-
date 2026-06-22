@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <defs>
+    <linearGradient id="trGrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#D8C0C0"/><stop offset="40%" stop-color="#F8EEEE"/><stop offset="100%" stop-color="#D8C0C0"/></linearGradient>
+    <linearGradient id="trRing" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#B09090"/><stop offset="50%" stop-color="#E8D8D8"/><stop offset="100%" stop-color="#B09090"/></linearGradient>
+    <radialGradient id="trBronch" cx="50%" cy="30%" r="70%"><stop offset="0%" stop-color="#ECD8D8"/><stop offset="100%" stop-color="#C4A0A0"/></radialGradient>
+    <filter id="trShadow"><feDropShadow dx="2" dy="4" stdDeviation="5" flood-color="#402020" flood-opacity="0.4"/></filter>
+  </defs>
+
+  <!-- badan trakea utama -->
+  <rect x="96" y="8" width="48" height="140" rx="22" fill="url(#trGrad)" filter="url(#trShadow)"/>
+
+  <!-- lapisan dalam lumen -->
+  <rect x="106" y="12" width="28" height="132" rx="13" fill="#FFF0F0" opacity="0.6"/>
+
+  <!-- silia di dalam -->
+  <g stroke="#D0A0A0" stroke-width="1" opacity="0.45">
+    <line x1="112" y1="20" x2="110" y2="14"/><line x1="116" y1="19" x2="115" y2="13"/>
+    <line x1="120" y1="18" x2="120" y2="12"/><line x1="124" y1="19" x2="125" y2="13"/>
+    <line x1="128" y1="20" x2="130" y2="14"/>
+  </g>
+
+  <!-- cincin tulang rawan (C-shaped cartilage rings) -->
+  <g fill="url(#trRing)" stroke="#9A7878" stroke-width="1">
+    <!-- 10 cincin tulang rawan -->
+    <path d="M96 26 C96 22 100 20 104 20 Q120 18 136 20 C140 20 144 22 144 26 C144 30 140 32 136 32 Q120 34 104 32 C100 32 96 30 96 26 Z"/>
+    <path d="M96 42 C96 38 100 36 104 36 Q120 34 136 36 C140 36 144 38 144 42 C144 46 140 48 136 48 Q120 50 104 48 C100 48 96 46 96 42 Z"/>
+    <path d="M96 58 C96 54 100 52 104 52 Q120 50 136 52 C140 52 144 54 144 58 C144 62 140 64 136 64 Q120 66 104 64 C100 64 96 62 96 58 Z"/>
+    <path d="M96 74 C96 70 100 68 104 68 Q120 66 136 68 C140 68 144 70 144 74 C144 78 140 80 136 80 Q120 82 104 80 C100 80 96 78 96 74 Z"/>
+    <path d="M96 90 C96 86 100 84 104 84 Q120 82 136 84 C140 84 144 86 144 90 C144 94 140 96 136 96 Q120 98 104 96 C100 96 96 94 96 90 Z"/>
+    <path d="M96 106 C96 102 100 100 104 100 Q120 98 136 100 C140 100 144 102 144 106 C144 110 140 112 136 112 Q120 114 104 112 C100 112 96 110 96 106 Z"/>
+    <path d="M96 122 C96 118 100 116 104 116 Q120 114 136 116 C140 116 144 118 144 122 C144 126 140 128 136 128 Q120 130 104 128 C100 128 96 126 96 122 Z"/>
+    <path d="M96 138 C96 134 100 132 104 132 Q120 130 136 132 C140 132 144 134 144 138 C144 142 140 144 136 144 Q120 146 104 144 C100 144 96 142 96 138 Z"/>
+  </g>
+
+  <!-- karina (tempat percabangan) -->
+  <path d="M120 148 C120 152 114 156 108 160 C100 166 88 170 80 178" fill="none" stroke="url(#trBronch)" stroke-width="18" stroke-linecap="round" filter="url(#trShadow)"/>
+  <path d="M120 148 C120 152 126 156 132 160 C140 166 152 170 160 178" fill="none" stroke="url(#trBronch)" stroke-width="18" stroke-linecap="round" filter="url(#trShadow)"/>
+
+  <!-- sorot cahaya -->
+  <rect x="108" y="12" width="8" height="132" rx="4" fill="white" opacity="0.25"/>
+
+  <!-- label -->
+  <text x="120" y="212" text-anchor="middle" font-family="'Plus Jakarta Sans',sans-serif" font-size="15" font-weight="700" fill="#7A4040">Trakea</text>
+  <text x="120" y="228" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#9A6060" opacity="0.85">Batang Tenggorokan</text>
+
+  <!-- panah kiri kanan label bronkus -->
+  <text x="66" y="186" text-anchor="middle" font-family="sans-serif" font-size="8.5" fill="#7A4040" opacity="0.85">Bronkus</text>
+  <text x="174" y="186" text-anchor="middle" font-family="sans-serif" font-size="8.5" fill="#7A4040" opacity="0.85">Bronkus</text>
+  <text x="66" y="196" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#7A4040" opacity="0.75">Kiri</text>
+  <text x="174" y="196" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#7A4040" opacity="0.75">Kanan</text>
+</svg>

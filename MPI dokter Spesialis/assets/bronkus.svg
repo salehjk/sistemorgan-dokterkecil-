@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <defs>
+    <linearGradient id="brGrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#C4A0A8"/><stop offset="50%" stop-color="#ECD8DC"/><stop offset="100%" stop-color="#C4A0A8"/></linearGradient>
+    <filter id="brShadow"><feDropShadow dx="1" dy="3" stdDeviation="3.5" flood-color="#402020" flood-opacity="0.38"/></filter>
+  </defs>
+
+  <!-- trakea bagian bawah -->
+  <rect x="105" y="8" width="30" height="42" rx="14" fill="url(#brGrad)" filter="url(#brShadow)"/>
+  <rect x="112" y="8" width="10" height="42" rx="5" fill="white" opacity="0.3"/>
+
+  <!-- karina (cabang utama) -->
+  <!-- bronkus utama kanan -->
+  <path d="M120 50 C118 58 110 66 100 72 C88 80 72 84 58 90" fill="none" stroke="url(#brGrad)" stroke-width="20" stroke-linecap="round" filter="url(#brShadow)"/>
+  <!-- bronkus utama kiri -->
+  <path d="M120 50 C122 58 130 66 140 72 C152 80 168 84 182 90" fill="none" stroke="url(#brGrad)" stroke-width="18" stroke-linecap="round" filter="url(#brShadow)"/>
+
+  <!-- cabang kanan: lobus atas, tengah, bawah -->
+  <path d="M58 90 C46 94 34 90 24 82" fill="none" stroke="url(#brGrad)" stroke-width="13" stroke-linecap="round" filter="url(#brShadow)"/>
+  <path d="M58 90 C52 100 48 112 50 124" fill="none" stroke="url(#brGrad)" stroke-width="13" stroke-linecap="round" filter="url(#brShadow)"/>
+  <path d="M58 90 C62 102 64 116 60 130" fill="none" stroke="url(#brGrad)" stroke-width="12" stroke-linecap="round" filter="url(#brShadow)"/>
+
+  <!-- cabang kiri: lobus atas & bawah -->
+  <path d="M182 90 C194 94 206 90 216 82" fill="none" stroke="url(#brGrad)" stroke-width="13" stroke-linecap="round" filter="url(#brShadow)"/>
+  <path d="M182 90 C186 104 184 120 178 132" fill="none" stroke="url(#brGrad)" stroke-width="13" stroke-linecap="round" filter="url(#brShadow)"/>
+
+  <!-- sub-cabang (bronkiolus) kanan -->
+  <path d="M24 82 C16 74 12 64 14 54" fill="none" stroke="url(#brGrad)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M50 124 C42 130 34 136 28 146" fill="none" stroke="url(#brGrad)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M50 124 C52 134 54 144 50 154" fill="none" stroke="url(#brGrad)" stroke-width="7" stroke-linecap="round"/>
+  <path d="M60 130 C62 142 60 154 56 164" fill="none" stroke="url(#brGrad)" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- sub-cabang (bronkiolus) kiri -->
+  <path d="M216 82 C224 74 228 64 226 54" fill="none" stroke="url(#brGrad)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M178 132 C174 142 172 152 174 162" fill="none" stroke="url(#brGrad)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M178 132 C182 144 184 154 182 164" fill="none" stroke="url(#brGrad)" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- sorot cahaya di dalam lumen -->
+  <path d="M120 52 C118 60 112 68 102 74" fill="none" stroke="white" stroke-width="5" stroke-linecap="round" opacity="0.3"/>
+  <path d="M120 52 C122 60 128 68 138 74" fill="none" stroke="white" stroke-width="5" stroke-linecap="round" opacity="0.28"/>
+
+  <!-- label -->
+  <text x="120" y="205" text-anchor="middle" font-family="'Plus Jakarta Sans',sans-serif" font-size="15" font-weight="700" fill="#7A4040">Bronkus</text>
+  <text x="120" y="220" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#9A6060" opacity="0.85">Pohon Bronkial</text>
+  <text x="42" y="68" text-anchor="middle" font-family="sans-serif" font-size="8.5" fill="#6A3030" opacity="0.85">Kiri</text>
+  <text x="198" y="68" text-anchor="middle" font-family="sans-serif" font-size="8.5" fill="#6A3030" opacity="0.85">Kanan</text>
+</svg>

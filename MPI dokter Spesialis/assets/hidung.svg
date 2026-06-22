@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <defs>
+    <radialGradient id="nSkin" cx="38%" cy="28%" r="72%"><stop offset="0%" stop-color="#FAD3AE"/><stop offset="55%" stop-color="#DCA070"/><stop offset="100%" stop-color="#B07848"/></radialGradient>
+    <radialGradient id="nMucosa" cx="38%" cy="28%" r="72%"><stop offset="0%" stop-color="#FFB8C0"/><stop offset="100%" stop-color="#CC7080"/></radialGradient>
+    <filter id="nShadow"><feDropShadow dx="2" dy="4" stdDeviation="5" flood-color="#4A1800" flood-opacity="0.35"/></filter>
+  </defs>
+
+  <!-- tampak depan hidung: ujung atas meruncing, bawah lebar -->
+  <!-- tulang hidung -->
+  <path d="M100 16 C100 16 120 12 140 16 C152 20 160 32 158 48 C156 64 148 78 140 90 C132 102 120 112 120 112 C120 112 108 102 100 90 C92 78 84 64 82 48 C80 32 88 20 100 16 Z" fill="url(#nSkin)" filter="url(#nShadow)"/>
+
+  <!-- lubang hidung kiri & kanan -->
+  <ellipse cx="102" cy="112" rx="22" ry="16" fill="#6A3020" transform="rotate(-8 102 112)"/>
+  <ellipse cx="138" cy="112" rx="22" ry="16" fill="#6A3020" transform="rotate(8 138 112)"/>
+  <ellipse cx="100" cy="110" rx="14" ry="10" fill="#3A1208" transform="rotate(-8 100 110)"/>
+  <ellipse cx="140" cy="110" rx="14" ry="10" fill="#3A1208" transform="rotate(8 140 110)"/>
+
+  <!-- septum -->
+  <path d="M120 78 C120 90 120 102 120 116" fill="none" stroke="#C09070" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- konka nasal (lipatan dalam rongga) -->
+  <path d="M88 56 C96 50 108 50 114 56 C108 60 96 60 88 56 Z" fill="url(#nMucosa)" opacity="0.7"/>
+  <path d="M88 72 C96 66 110 66 116 72 C110 76 96 76 88 72 Z" fill="url(#nMucosa)" opacity="0.65"/>
+  <path d="M152 56 C144 50 132 50 126 56 C132 60 144 60 152 56 Z" fill="url(#nMucosa)" opacity="0.7"/>
+  <path d="M152 72 C144 66 130 66 124 72 C130 76 144 76 152 72 Z" fill="url(#nMucosa)" opacity="0.65"/>
+
+  <!-- silia (rambut-rambut kecil) -->
+  <g stroke="#B06040" stroke-width="1.2" opacity="0.6" stroke-linecap="round">
+    <line x1="94" y1="102" x2="90" y2="95"/><line x1="100" y1="104" x2="97" y2="96"/>
+    <line x1="106" y1="104" x2="104" y2="96"/><line x1="112" y1="102" x2="111" y2="94"/>
+    <line x1="128" y1="102" x2="129" y2="94"/><line x1="134" y1="104" x2="136" y2="96"/>
+    <line x1="140" y1="104" x2="143" y2="96"/><line x1="146" y1="102" x2="150" y2="95"/>
+  </g>
+
+  <!-- sorot hidung -->
+  <ellipse cx="112" cy="36" rx="10" ry="18" fill="white" opacity="0.22" transform="rotate(-8 112 36)"/>
+  <ellipse cx="130" cy="36" rx="8" ry="14" fill="white" opacity="0.18" transform="rotate(8 130 36)"/>
+
+  <!-- panah aliran udara -->
+  <path d="M60 148 C70 140 80 136 90 132" fill="none" stroke="#60B0E0" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="5 4" opacity="0.75"/>
+  <path d="M88 130 L94 132 L90 138" fill="none" stroke="#60B0E0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.75"/>
+  <text x="44" y="150" font-family="sans-serif" font-size="8.5" fill="#4080A0">Udara</text>
+
+  <!-- label bawah -->
+  <text x="120" y="172" text-anchor="middle" font-family="'Plus Jakarta Sans',sans-serif" font-size="15" font-weight="700" fill="#8A4020">Hidung</text>
+  <text x="120" y="190" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#9A5030" opacity="0.85">Menyaring &amp; menghangatkan udara</text>
+</svg>

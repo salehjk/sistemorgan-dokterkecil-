@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <defs>
+    <radialGradient id="lOuter" cx="36%" cy="28%" r="74%"><stop offset="0%" stop-color="#C87840"/><stop offset="55%" stop-color="#8B3A18"/><stop offset="100%" stop-color="#4E1A06"/></radialGradient>
+    <radialGradient id="lLeft" cx="40%" cy="32%" r="70%"><stop offset="0%" stop-color="#D89050"/><stop offset="100%" stop-color="#7A3010"/></radialGradient>
+    <radialGradient id="gallbladder" cx="38%" cy="28%" r="72%"><stop offset="0%" stop-color="#B8D860"/><stop offset="100%" stop-color="#607820"/></radialGradient>
+    <filter id="lShadow"><feDropShadow dx="2" dy="5" stdDeviation="6" flood-color="#2A0A00" flood-opacity="0.5"/></filter>
+  </defs>
+
+  <!-- lobus kanan (lebih besar) -->
+  <path d="M128 48 C100 44 68 52 48 70 C28 90 26 122 36 148 C48 176 72 196 100 202 C124 206 140 196 148 178 C158 160 156 136 148 116 C142 100 138 82 134 68 C131 58 130 50 128 48 Z" fill="url(#lOuter)" filter="url(#lShadow)"/>
+
+  <!-- lobus kiri (lebih kecil) -->
+  <path d="M128 48 C138 46 154 48 166 56 C178 66 184 82 182 100 C180 116 172 128 160 132 C150 136 140 130 136 120 C132 110 136 96 138 84 C140 72 136 58 128 48 Z" fill="url(#lLeft)"/>
+
+  <!-- fisura (celah antar lobus) -->
+  <path d="M128 48 C130 68 134 88 136 108 C138 122 142 134 148 142" fill="none" stroke="#3C1206" stroke-width="3" opacity="0.6"/>
+
+  <!-- tekstur permukaan hati (lobulus) -->
+  <g opacity="0.18" fill="#3C1206">
+    <circle cx="64" cy="88" r="12"/><circle cx="88" cy="72" r="12"/><circle cx="112" cy="68" r="11"/>
+    <circle cx="58" cy="112" r="12"/><circle cx="82" cy="98" r="12"/><circle cx="106" cy="90" r="11"/>
+    <circle cx="56" cy="136" r="11"/><circle cx="78" cy="120" r="12"/><circle cx="100" cy="112" r="11"/>
+    <circle cx="62" cy="160" r="11"/><circle cx="84" cy="146" r="11"/><circle cx="104" cy="136" r="11"/>
+    <circle cx="80" cy="172" r="10"/><circle cx="100" cy="160" r="10"/><circle cx="118" cy="148" r="10"/>
+  </g>
+
+  <!-- vena porta / pembuluh utama -->
+  <path d="M96 188 C96 175 100 162 108 155" fill="none" stroke="#6A2808" stroke-width="6" stroke-linecap="round" opacity="0.7"/>
+  <path d="M108 155 C116 148 118 138 116 128" fill="none" stroke="#6A2808" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+  <path d="M108 155 C120 158 130 156 138 150" fill="none" stroke="#6A2808" stroke-width="4.5" stroke-linecap="round" opacity="0.65"/>
+
+  <!-- kantung empedu (gallbladder) -->
+  <ellipse cx="116" cy="196" rx="16" ry="22" fill="url(#gallbladder)" stroke="#506010" stroke-width="1.5"/>
+  <ellipse cx="112" cy="190" rx="6" ry="8" fill="white" opacity="0.25"/>
+  <text x="116" y="208" text-anchor="middle" font-family="sans-serif" font-size="7.5" fill="#2A3800" opacity="0.85">Empedu</text>
+
+  <!-- sorot cahaya -->
+  <ellipse cx="72" cy="80" rx="28" ry="18" fill="white" opacity="0.18" transform="rotate(-22 72 80)"/>
+  <ellipse cx="155" cy="72" rx="16" ry="11" fill="white" opacity="0.15" transform="rotate(18 155 72)"/>
+
+  <!-- label -->
+  <text x="78" y="228" text-anchor="middle" font-family="'Plus Jakarta Sans',sans-serif" font-size="15" font-weight="700" fill="#6A2808">Hati (Liver)</text>
+</svg>

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <defs>
+    <radialGradient id="aWall" cx="35%" cy="30%" r="72%"><stop offset="0%" stop-color="#FFA0A0"/><stop offset="55%" stop-color="#D82030"/><stop offset="100%" stop-color="#8A0010"/></radialGradient>
+    <radialGradient id="aBlood" cx="40%" cy="35%" r="70%"><stop offset="0%" stop-color="#FF7070"/><stop offset="100%" stop-color="#C01020"/></radialGradient>
+    <filter id="aShadow"><feDropShadow dx="2" dy="4" stdDeviation="5" flood-color="#400010" flood-opacity="0.42"/></filter>
+    <radialGradient id="vWall" cx="35%" cy="30%" r="72%"><stop offset="0%" stop-color="#8898D0"/><stop offset="55%" stop-color="#3450A0"/><stop offset="100%" stop-color="#1A2A68"/></radialGradient>
+    <radialGradient id="vBlood" cx="40%" cy="35%" r="70%"><stop offset="0%" stop-color="#6070B8"/><stop offset="100%" stop-color="#283870"/></radialGradient>
+  </defs>
+
+  <!-- ARTERI — kiri -->
+  <!-- label atas -->
+  <text x="68" y="18" text-anchor="middle" font-family="'Plus Jakarta Sans',sans-serif" font-size="13" font-weight="700" fill="#C02030">Arteri</text>
+  <text x="68" y="32" text-anchor="middle" font-family="sans-serif" font-size="8.5" fill="#A03040" opacity="0.85">(Pembuluh Nadi)</text>
+
+  <!-- tampak samping: tabung tebal -->
+  <rect x="22" y="44" width="92" height="78" rx="38" fill="url(#aWall)" filter="url(#aShadow)"/>
+  <rect x="36" y="52" width="64" height="62" rx="28" fill="url(#aBlood)"/>
+  <rect x="42" y="56" width="24" height="52" rx="10" fill="#FF5050" opacity="0.35"/>
+  <!-- lapisan dinding -->
+  <rect x="22" y="44" width="92" height="78" rx="38" fill="none" stroke="#FFB0B0" stroke-width="2" opacity="0.3"/>
+
+  <!-- penampang melintang arteri (lingkaran di bawah) -->
+  <circle cx="68" cy="168" r="44" fill="url(#aWall)" filter="url(#aShadow)"/>
+  <circle cx="68" cy="168" r="30" fill="url(#aBlood)"/>
+  <circle cx="68" cy="168" r="16" fill="#FF5050" opacity="0.4"/>
+  <circle cx="60" cy="160" r="10" fill="#FF9090" opacity="0.22"/>
+
+  <!-- label lapisan arteri -->
+  <text x="68" y="167" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#FFE0E0" opacity="0.9">Lumen</text>
+  <text x="68" y="178" text-anchor="middle" font-family="sans-serif" font-size="6.5" fill="#FFE0E0" opacity="0.8">(darah)</text>
+
+  <!-- keterangan dinding tebal arteri -->
+  <line x1="115" y1="168" x2="135" y2="155" stroke="#D84040" stroke-width="1.5" opacity="0.7"/>
+  <text x="137" y="152" font-family="sans-serif" font-size="7.5" fill="#D84040" opacity="0.9">Dinding</text>
+  <text x="137" y="162" font-family="sans-serif" font-size="7.5" fill="#D84040" opacity="0.9">tebal &amp; elastis</text>
+
+  <!-- VENA — kanan -->
+  <text x="176" y="18" text-anchor="middle" font-family="'Plus Jakarta Sans',sans-serif" font-size="13" font-weight="700" fill="#3050A0">Vena</text>
+  <text x="176" y="32" text-anchor="middle" font-family="sans-serif" font-size="8.5" fill="#4060A0" opacity="0.85">(Pembuluh Balik)</text>
+
+  <!-- tampak samping vena (lebih lebar, tipis) -->
+  <rect x="130" y="44" width="92" height="78" rx="38" fill="url(#vWall)" filter="url(#aShadow)"/>
+  <rect x="140" y="50" width="72" height="66" rx="32" fill="url(#vBlood)"/>
+  <rect x="146" y="54" width="28" height="56" rx="12" fill="#5060A0" opacity="0.35"/>
+
+  <!-- katup vena -->
+  <path d="M170 60 C174 72 174 88 170 100" fill="none" stroke="#A0B0E0" stroke-width="3" opacity="0.7"/>
+  <path d="M192 60 C188 72 188 88 192 100" fill="none" stroke="#A0B0E0" stroke-width="3" opacity="0.7"/>
+  <path d="M170 80 L182 88 L194 80" fill="none" stroke="#C0D0FF" stroke-width="2.5" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="182" y="75" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#C0D0FF" opacity="0.85">katup</text>
+
+  <!-- penampang melintang vena -->
+  <circle cx="176" cy="168" r="44" fill="url(#vWall)" filter="url(#aShadow)"/>
+  <circle cx="176" cy="168" r="34" fill="url(#vBlood)"/>
+  <circle cx="176" cy="168" r="20" fill="#4060A0" opacity="0.4"/>
+  <circle cx="168" cy="160" r="12" fill="#8090C0" opacity="0.22"/>
+
+  <text x="176" y="167" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#D0D8FF" opacity="0.9">Lumen</text>
+  <text x="176" y="178" text-anchor="middle" font-family="sans-serif" font-size="6.5" fill="#D0D8FF" opacity="0.8">(lebih lebar)</text>
+
+  <line x1="222" y1="168" x2="236" y2="152" stroke="#4060A0" stroke-width="1.5" opacity="0.65"/>
+  <text x="238" y="148" font-family="sans-serif" font-size="7" fill="#4060A0" opacity="0.9">Dinding</text>
+  <text x="238" y="158" font-family="sans-serif" font-size="7" fill="#4060A0" opacity="0.9">tipis, ada</text>
+  <text x="238" y="168" font-family="sans-serif" font-size="7" fill="#4060A0" opacity="0.9">katup</text>
+</svg>

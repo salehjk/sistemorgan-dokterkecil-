@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240" id="diafragma">
+  <!-- DIAFRAGMA -->
+  <defs>
+    <radialGradient id="diaMuscle" cx="50%" cy="30%" r="70%"><stop offset="0%" stop-color="#E88080"/><stop offset="60%" stop-color="#C04040"/><stop offset="100%" stop-color="#801020"/></radialGradient>
+    <linearGradient id="diaTendon" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#F0E8D8"/><stop offset="100%" stop-color="#D8C8A8"/></linearGradient>
+    <filter id="diaShadow"><feDropShadow dx="2" dy="4" stdDeviation="5" flood-color="#401020" flood-opacity="0.4"/></filter>
+  </defs>
+
+  <!-- otot diafragma kiri (bagian dari berbentuk kubah) -->
+  <path d="M16 128 C20 98 40 76 70 68 C88 62 100 64 110 72" fill="url(#diaMuscle)" filter="url(#diaShadow)"/>
+  <path d="M14 130 C18 150 24 162 30 168 C38 176 52 180 70 178 C90 176 104 168 112 158 C120 148 122 136 120 126" fill="url(#diaMuscle)"/>
+
+  <!-- otot diafragma kanan -->
+  <path d="M224 128 C220 98 200 76 170 68 C152 62 140 64 130 72" fill="url(#diaMuscle)" filter="url(#diaShadow)"/>
+  <path d="M226 130 C222 150 216 162 210 168 C202 176 188 180 170 178 C150 176 136 168 128 158 C120 148 118 136 120 126" fill="url(#diaMuscle)"/>
+
+  <!-- central tendon (bagian tendon di tengah) -->
+  <path d="M110 72 Q120 80 130 72 Q132 90 130 110 Q126 126 120 128 Q114 126 110 110 Q108 90 110 72Z" fill="url(#diaTendon)" stroke="#C8B898" stroke-width="1.5"/>
+
+  <!-- foramen (lubang lewat esofagus, aorta, vena) -->
+  <circle cx="120" cy="98" r="7" fill="#3A1010" opacity="0.5"/>
+  <circle cx="108" cy="108" r="5" fill="#1A2840" opacity="0.4"/>
+  <circle cx="132" cy="108" r="5" fill="#3A1010" opacity="0.4"/>
+  <text x="120" y="95" text-anchor="middle" font-family="sans-serif" font-size="6.5" fill="#F0E0D0" opacity="0.85">Eso.</text>
+
+  <!-- garis serat otot -->
+  <g stroke="#9A2030" stroke-width="1.6" fill="none" opacity="0.38" stroke-linecap="round">
+    <path d="M24 138 C40 120 60 108 80 104"/><path d="M28 152 C46 136 68 124 90 118"/>
+    <path d="M40 164 C58 150 78 140 100 134"/>
+    <path d="M216 138 C200 120 180 108 160 104"/><path d="M212 152 C194 136 172 124 150 118"/>
+    <path d="M200 164 C182 150 162 140 140 134"/>
+  </g>
+
+  <!-- panah arah kontraksi -->
+  <path d="M60 52 L60 64 M56 58 L60 64 L64 58" fill="none" stroke="#D84040" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+  <path d="M180 52 L180 64 M176 58 L180 64 L184 58" fill="none" stroke="#D84040" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+  <text x="60" y="46" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#C03030" opacity="0.85">kontraksi</text>
+
+  <!-- rongga dada di atas -->
+  <text x="120" y="36" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#6090B8" opacity="0.75">↑ Rongga Dada</text>
+  <!-- rongga perut di bawah -->
+  <text x="120" y="200" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#C07040" opacity="0.75">↓ Rongga Perut</text>
+
+  <!-- label -->
+  <text x="120" y="222" text-anchor="middle" font-family="'Plus Jakarta Sans',sans-serif" font-size="15" font-weight="700" fill="#801020">Diafragma</text>
+</svg>
